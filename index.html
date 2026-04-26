@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKATE & SNOW — магазин досок</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">SKATE & SNOW</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <!-- Скейты — выпадающее меню -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link">Скейты ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="dropdown__link">Деки</a></li>
+                            <li><a href="#" class="dropdown__link">Траки</a></li>
+                            <li><a href="#" class="dropdown__link">Колёса</a></li>
+                            <li><a href="#" class="dropdown__link">Подшипники</a></li>
+                            <li><a href="#" class="dropdown__link">Аксессуары</a></li>
+                            <li><a href="#" class="dropdown__link">Одежда</a></li>
+                            <li><a href="#" class="dropdown__link">Обувь</a></li>
+                        </ul>
+                    </li>
+                    <!-- Сноуборды — выпадающее меню -->
+                    <li class="nav__item nav__item--dropdown">
+                        <a href="#" class="nav__link">Сноуборды ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="dropdown__link">Доски</a></li>
+                            <li><a href="#" class="dropdown__link">Крепления</a></li>
+                            <li><a href="#" class="dropdown__link">Ботинки</a></li>
+                            <li><a href="#" class="dropdown__link">Шлемы и защита</a></li>
+                            <li><a href="#" class="dropdown__link">Маски и очки</a></li>
+                            <li><a href="#" class="dropdown__link">Одежда</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Корзина с иконкой -->
+            <a href="#" class="cart" aria-label="Корзина">
+                <span class="cart__icon">🛒</span>
+                <span class="cart__count">0</span>
+            </a>
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Покоряй улицы и горы</h1>
+                <p class="hero__subtitle">Скейтборды и сноуборды для любого уровня катания. От новичка до профи.</p>
+                <a href="#" class="btn">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <section class="catalog container">
+            <h2 class="section-title">🔥 Хиты продаж</h2>
+            <div class="catalog__grid">
+                <article class="card">
+                    <div class="card__img-wrapper">
+                        <img src="img/1.jpg" alt="Дека" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Дека для скейта JACUZZI Louie Barletta Toy EX7 Light Salmon</h3>
+                        <p class="card__price"><span class="card__old-price">8 300 ₽</span> 5 810 ₽</p>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img-wrapper">
+                        <img src="img/2.jpg" alt="Белый сноуборд" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Сноуборд ARBOR Cadence Rocker 25-26</h3>
+                        <p class="card__price"><span class="card__old-price">46 270 ₽</span> 34 700 ₽</p>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img-wrapper">
+                        <img src="img/3.jpg" alt="Подвески" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Скейтборд в сборе GIRL CARROLL HELLO KITTY</h3>
+                        <p class="card__price"><span class="card__old-price">13 890 ₽</span> 11 890 ₽</p>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__img-wrapper">
+                        <img src="img/4.jpg" alt="Сноуборд" class="card__img">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Сноуборд TERROR SNOW BAE 23/24</h3>
+                        <p class="card__price"><span class="card__old-price">34 200 ₽</span> 20 520 ₽</p>
+                        <button class="btn btn--small">В корзину</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="subscribe container">
+            <div class="subscribe__inner">
+                <h2 class="section-title section-title--light">Будь в курсе новинок</h2>
+                <p class="subscribe__text">Подпишись на рассылку и получи промокод на скидку 5% на первый заказ</p>
+                <form class="subscribe__form" id="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Ваш email</label>
+                        <span class="form-error">Введите корректный email</span>
+                    </div>
+                    <button type="submit" class="btn btn--submit">Подписаться</button>
+                </form>
+                <p class="subscribe__agreement">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">© 2025 SKATE & SNOW. Все права защищены.</p>
+            <address class="footer__contacts">
+                <a href="mailto:info@skate-snow.ru">info@skate-snow.ru</a>
+                <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
